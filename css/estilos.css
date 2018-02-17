@@ -44,6 +44,16 @@ a.articulo{
 	margin-bottom: 1em;
 }
 
+iframe{
+	width: 95%;
+	min-height: 400px;	
+}
+
+video{
+	width: 95%;
+	min-height: 400px;
+}
+
 /*Carrousell section*/
 .item{
 	position: absolute;
