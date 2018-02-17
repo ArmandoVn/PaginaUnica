@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/estilos.css">
+        <link rel="stylesheet" type="text/css" href="css/contactoCSS.css">
         <link rel="icon" type="text/css" href="img/unica.ico">
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     </head>
@@ -45,11 +46,149 @@
           </div>
         </nav>
       </header>
+      
+      <!-- Elemento copiado de (Bootsnip): https://bootsnipp.com/snippets/4MaPW -->
+      <div class="container">
+          
+        <div class="stepwizard col-md-offset-1">
+          <div class="stepwizard-row setup-panel">
+             <div class="btn-circle-small"></div>
+
+              <div class="stepwizard-step">
+                <a href="#step-1" type="button" class="btn btn-primary btn-circle adv_blue">1</a>
+                <p>step 1</p>
+              </div>
+
+              <div class="stepwizard-step">
+                <a href="#step-2" type="button" class="btn btn-default btn-circle adv_orange">2</a>
+                <p>Step 2</p>
+              </div>
+
+              <div class="stepwizard-step">
+                <a href="#step-3" type="button" class="btn btn-default btn-circle adv_grey">3</a>
+                <p>Step 3</p>
+              </div>
+
+              <div class="btn-circle-small-right f-right"></div>
+
+            </div>
+          </div>
+            <!-- Consent begin -->
+          <form role="form" action="" method="post">
+            <div class="row setup-content" id="step-1">
+              <div class="col-xs-12 col-md-10 col-md-offset-1">
+                <div class="col-md-12">
+                  <h3>Terminos y condiciones</h3>
+                  <div class="panel panel-default">
+                  <!-- Default panel contents -->
+
+                  <div class="panel-body">
+                    <h3>1. Aceptación</h3>
+                    <p>Al usar o ingresar al sitio de Internet de YouTube o cualquier producto, software, feed de datos y servicio de YouTube desde o a través del sitio de Internet YouTube (en lo sucesivo, conjuntamente el "Servicio"), usted acuerda expresamente que (1) estos términos y condiciones (en lo sucesivo los "Términos del Servicio"), (2) la política de privacidad de YouTube, ubicada en la dirección de Internet https://www.youtube.mx/t/privacy, que declara expresamente conocer y acepta en todos sus términos, y que se considera aquí íntegramente reproducida como si a la letra se insertare, y (3) los Lineamientos de la Comunidad YouTube, ubicados en la dirección de Internet https://www.youtube.mx/t/community_guidelines, que declara expresamente conocer y acepta en todos sus términos, los que se consideran íntegramente reproducidos (en lo sucesivo en su conjunto el "Contrato"). Si no ustuviera de acuerdo con los Términos del Servicio, la política de privacidad de YouTube o los Lineamientos de la Comunidad YouTube, por favor no utilice el Servicio.
+
+                    Si bien podemos intentar notificarle cambios significativos a los Términos del Servicio, usted deberá revisar periódicamente la versión actualizada de los mismos en https://www.youtube.mx/t/terms. YouTube podrá, a su discreción, modificar o enmendar estos Términos del Servicio y políticas en cualquier momento, y usted acepta expresamente que quedará sujeto a dichas modificaciones o enmiendas. Nada de lo establecido en estos Términos del Servicio será considerado como un otorgamiento de derechos o beneficios a terceros.</p>
+                    <h3>2. Servicio</h3>
+                    <p>Los presentes Términos del Servicio son aplicables a todos los usuarios del Servicio, incluyendo, sin carácter limitativo, a los usuarios que además contribuyan Contenido al Servicio. "Contenido" incluye el texto, software, scripts, gráficos, fotos, sonidos, música, videos, combinaciones audiovisuales, funciones interactivas y otros materiales que pueda visualizar en, acceder a través de o contribuir al Servicio. El Servicio incluye todos los aspectos de YouTube, incluyendo todos los productos, software y servicios ofrecidos a través del sitio de Internet YouTube como, por ejemplo, los canales YouTube y el "Embeddable Player" (reproductor insertable) de YouTube, entre otros.
+                    
+                    El Servicio puede contener vínculos (links) a sitios de Internet de terceros que no son propiedad ni son controlados por YouTube. YouTube no tiene control alguno sobre dichos sitios de Internet, y no asume responsabilidad alguna por el contenido, políticas de privacidad o prácticas de ningún sitio de Internet propiedad de o bajo el control de terceros. Además, YouTube no puede ni va a censurar o editar el contenido de ningún sitio propiedad de un tercero o controlado por un tercero. Al utilizar el Servicio, usted libera expresamente a YouTube de toda y cualquier responsabilidad derivada del uso que usted haga de un sitio de Internet de un tercero.
+                    
+                    En virtud de lo anterior, lo exhortamos para que se mantenga atento cuando usted salga del Servicio y para que lea los términos y condiciones y las políticas de privacidad de cualquier otro sitio de Internet que visite.</p>
+
+                    <div class="checkbox">
+                      <label><input type="checkbox">He leido y acepto los terminos y condiciones.</label>
+                    </div>
+                      
+                    <input class="btn nextBtn btn-block btn-primary" type="button" value="Siguiente">
+                    </div>
+
+                  </div>
+
+                </div>
+              </div>
+            <!-- Split button end -->
+            </div> <!-- Step 1 end -->
+            
+            <div class="row setup-content" id="step-2">
+              
+              <div class="col-xs-12 col-md-4 col-md-offset-1">
+                <div class="col-md-12">
+                  <h3>Informacion personal</h3>
+                  <div class="form-group">
+                    <label class="control-label">Nombre:</label>
+                    <input class="form-control" type="text" name="nombre" placeholder="Nombre" required>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="control-label">Apellido Paterno:</label>
+                    <input class="form-control" type="text" name="apellido1" placeholder="Apellido Paterno" required>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="control-label">Apellido Materno:</label>
+                    <input class="form-control" type="text" name="apellido2" placeholder="Apellido Materno" required>
+                  </div>
+                  
+                  <div class="form-group">
+                    <label for="fecha" class="col-form-label">Fecha de nacimiento:</label>
+                    <input class="form-control" type="date" name="fecha" min="1950-01-01"
+                                          max="2002-01-01">
+                  </div>
+
+                  <input class="btn nextBtn btn-block btn-primary" type="button" value="Siguiente">
+                </div>
+              </div>
+              <div class="col-md-7">
+                <img src="img/informacionPersonal.jpg">
+              </div>
+            </div>
+            
+
+            <div class="row setup-content" id="step-3">
+              <div class="col-md-offset-1 col-xs-12 col-md-5">
+
+                <div class="form-group">
+                  <label for="correo">Correo electronico</label>
+                  <input class="form-control" type="email" name="correo" placeholder="Correo @mail.com" required>
+                </div>
+
+                <div class="form-group">
+                  <label for="correo">Confirmar correo electronico</label>
+                  <input class="form-control" type="email" name="correo" placeholder="Correo @mail.com" required disabled>
+                </div>
+
+                <div class="form-group">
+                  <label form="mensaje">Dejanos tu mensaje:</label>
+                  <textarea placeholder="Mensaje" class="form-control" rows="5""></textarea>
+                </div>
+
+                <div class="form-group">
+                  <label for="sel1">Select list:</label>
+                  <select class="form-control" id="sel1">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                  </select>
+                </div>
+                
+                <button class="btn btn-block btn-primary" type="submit">Enviar</button>
+              </div>
+
+              <div class="col-md-5">
+                <img src="img/contacto.png" style="margin-top: 30%;">
+              </div>
+            </div>
+
+          </form>
+          
+        </div>
 
     <script src="js/vendor/jquery-1.11.2.min.js"></script>
 
     <script src="js/vendor/bootstrap.min.js"></script>
 
     <script src="js/main.js"></script>
+
+    <script type="text/javascript" src="js/scripts.js"></script>
     </body>
 </html>
