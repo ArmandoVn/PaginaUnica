@@ -2,13 +2,13 @@ body{
 	background-color: #464646;
 }
 
-.fija{
-	top: -1px;
-	position: sticky;
-}
-
+/*Navigation var*/
 .iconoNav{
 	width: 30px; height: 20px;
+}
+
+.icon-bar{
+	background-color: white;
 }
 
 .colorNav{
@@ -19,6 +19,7 @@ nav > div > div > ul > li > a, nav > div > div > a{
 	color: white;
 }
 
+/*Notice section*/
 .noticiasImg{
 	width: 100%;
 	height: 250px;
@@ -37,4 +38,75 @@ a.articulo{
 	background-color: white;
 	border-radius: 10px;
 	padding: 1em;
+	border:2px;
+	border-style: solid;
+	border-color: black;
+	margin-bottom: 1em;
+}
+
+iframe{
+	width: 95%;
+	min-height: 400px;	
+}
+
+video{
+	width: 95%;
+	min-height: 400px;
+}
+
+/*Carrousell section*/
+.item{
+	position: absolute;
+	height: 250px;
+	/*overflow: hidden; Oculta el contenido que salga del contenedor*/
+	overflow: hidden;
+	/*Ajusta el contenido al borde de su contenedor*/
+	box-sizing: border-box;
+}
+
+div.item > img{
+	position: relative;
+	margin: auto;
+	width: 100%;
+	margin: -12% 0px 0px 0px;
+}
+
+/*Parallax section*/
+.parallax1, .parallax2, .parallax3 {
+    width: 100%;
+
+    min-height: 35em; 
+
+    /*Scrolling efect parallax*/
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.parallax1{
+	background-image: url("../img/investigacion.jpg");
+}
+
+.parallax2{
+	background-image: url("../img/salasComputo.jpg");
+}
+
+.parallax3{
+	background-image: url("../img/Red.jpg");
+}
+
+.textoParallax{
+	position: absolute;
+	margin-top: 10%;
+	background-color: #464646;
+	color: white;
+	padding: 2em;
+}
+
+.textoEntreParallax{
+	background-color: #464646;
+	color: white;
+	padding: 2em;
 }
