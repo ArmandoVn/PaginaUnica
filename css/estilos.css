@@ -1,6 +1,5 @@
 body{
-	/*background-color: #464646;*/
-	background-color: #586F6C;
+	background-color: #464646;
 }
 
 p{
@@ -24,6 +23,11 @@ nav > div > div > ul > li > a, nav > div > div > a{
 }
 
 /*Notice section*/
+.titulo{
+	text-align: center;
+	color: white;
+}
+
 .noticiasImg{
 	width: 100%;
 	height: 250px;
@@ -42,9 +46,6 @@ a.articulo{
 	background-color: white;
 	border-radius: 10px;
 	padding: 1em;
-	border:2px;
-	border-style: solid;
-	border-color: black;
 	margin-bottom: 1em;
 }
 
@@ -58,6 +59,12 @@ video{
 	min-height: 400px;
 }
 
+.noticiasImgA{
+	width: 100%;
+	border-radius: 10px;
+	margin-bottom: 1em;
+}
+
 /*Carrousell section*/
 .item{
 	position: absolute;
@@ -68,11 +75,15 @@ video{
 	box-sizing: border-box;
 }
 
-div.item > img{
+div.item > a > img{
 	position: relative;
 	margin: auto;
 	width: 100%;
-	margin: -12% 0px 0px 0px;
+	margin: -15% 0px 0px 0px;
+}
+
+.pC{
+	text-align: center;
 }
 
 /*Parallax section*/

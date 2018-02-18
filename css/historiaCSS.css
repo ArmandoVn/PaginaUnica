@@ -1,0 +1,18 @@
+h1{
+	color: #DBC2AC;
+	margin: auto;
+}
+
+h3{
+	color: #B6A493;
+}
+
+p{
+	color: white;
+}
+
+.card{
+	background-color: #5A9092;
+	padding: .5em;
+	border-radius: 5px;
+}
