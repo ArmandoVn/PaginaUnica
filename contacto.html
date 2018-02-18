@@ -83,6 +83,9 @@
                   <!-- Default panel contents -->
 
                   <div class="panel-body">
+                    <h3>Seccion de contacto.</h3>
+                    <p>UNICA es un programa de la facultad de ingenieria, siempre dispuesta a colaborar con el sector empresaria en el desarrollo de software, si deseas ponerte en contacto con nosotros para el desarrllo de tu idea, por favor acepta nuestro terminos y condiciones y llena el formulario.</p>
+
                     <h3>1. Aceptación</h3>
                     <p>Al usar o ingresar al sitio de Internet de YouTube o cualquier producto, software, feed de datos y servicio de YouTube desde o a través del sitio de Internet YouTube (en lo sucesivo, conjuntamente el "Servicio"), usted acuerda expresamente que (1) estos términos y condiciones (en lo sucesivo los "Términos del Servicio"), (2) la política de privacidad de YouTube, ubicada en la dirección de Internet https://www.youtube.mx/t/privacy, que declara expresamente conocer y acepta en todos sus términos, y que se considera aquí íntegramente reproducida como si a la letra se insertare, y (3) los Lineamientos de la Comunidad YouTube, ubicados en la dirección de Internet https://www.youtube.mx/t/community_guidelines, que declara expresamente conocer y acepta en todos sus términos, los que se consideran íntegramente reproducidos (en lo sucesivo en su conjunto el "Contrato"). Si no ustuviera de acuerdo con los Términos del Servicio, la política de privacidad de YouTube o los Lineamientos de la Comunidad YouTube, por favor no utilice el Servicio.
 
@@ -115,17 +118,17 @@
                   <h3>Informacion personal</h3>
                   <div class="form-group">
                     <label class="control-label">Nombre:</label>
-                    <input class="form-control" type="text" name="nombre" placeholder="Nombre" required>
+                    <input id="nombre" class="form-control" type="text" name="nombre" placeholder="Nombre" required>
                   </div>
 
                   <div class="form-group">
                     <label class="control-label">Apellido Paterno:</label>
-                    <input class="form-control" type="text" name="apellido1" placeholder="Apellido Paterno" required>
+                    <input id="ap1" class="form-control" type="text" name="apellido1" placeholder="Apellido Paterno" required>
                   </div>
 
                   <div class="form-group">
                     <label class="control-label">Apellido Materno:</label>
-                    <input class="form-control" type="text" name="apellido2" placeholder="Apellido Materno" required>
+                    <input id="ap2" class="form-control" type="text" name="apellido2" placeholder="Apellido Materno" required>
                   </div>
                   
                   <div class="form-group">
@@ -148,30 +151,31 @@
 
                 <div class="form-group">
                   <label for="correo">Correo electronico</label>
-                  <input class="form-control" type="email" name="correo" placeholder="Correo @mail.com" required>
+                  <input class="form-control" type="email" name="correo" placeholder="Correo @mail.com" required id="correo">
                 </div>
 
                 <div class="form-group">
                   <label for="correo">Confirmar correo electronico</label>
-                  <input class="form-control" type="email" name="correo" placeholder="Correo @mail.com" required disabled>
+                  <input class="form-control" type="email" name="correo" placeholder="Correo @mail.com" required disabled >
                 </div>
 
                 <div class="form-group">
-                  <label form="mensaje">Dejanos tu mensaje:</label>
+                  <label form="mensaje">Razon por la cual deseas contactar a UNICA:</label>
                   <textarea placeholder="Mensaje" class="form-control" rows="5""></textarea>
                 </div>
 
                 <div class="form-group">
-                  <label for="sel1">Select list:</label>
+                  <label for="sel1">Numero de proyectos por realizar:</label>
                   <select class="form-control" id="sel1">
                     <option>1</option>
                     <option>2</option>
                     <option>3</option>
                     <option>4</option>
+                    <option>Más de 4</option>
                   </select>
                 </div>
                 
-                <button class="btn btn-block btn-primary" type="submit">Enviar</button>
+                <button class="btn btn-block btn-primary" type="submit" onclick="alerta();">Enviar</button>
               </div>
 
               <div class="col-md-5">
@@ -190,5 +194,7 @@
     <script src="js/main.js"></script>
 
     <script type="text/javascript" src="js/scripts.js"></script>
+
+    <script type="text/javascript" src="js/miAlert.js"></script>
     </body>
 </html>
