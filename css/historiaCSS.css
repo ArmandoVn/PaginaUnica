@@ -16,3 +16,9 @@ p{
 	padding: .5em;
 	border-radius: 5px;
 }
+
+div.card > img{
+	width: 100%;
+	margin: center;
+	position: relative;
+}
